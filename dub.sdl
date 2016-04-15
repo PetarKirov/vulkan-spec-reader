@@ -1,0 +1,5 @@
+name "vulkan-spec-reader"
+description "A minimal D application."
+copyright "Copyright © 2016, ZombineDev"
+authors "ZombineDev"
+dependency "arsd-official:dom" version="~>1.1"
