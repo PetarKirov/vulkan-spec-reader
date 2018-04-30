@@ -1,0 +1,22 @@
+# EditorConfig file: http://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+[*]
+# Save files in UTF-8 encoding
+charset = utf-8
+
+# Use Unix line-endings
+end_of_line = lf
+
+# Removes whitespace at the end of lines
+trim_trailing_whitespace = true
+
+# Ensures there's a final newline
+# (Many Unix tools assume a final newline, e.g. `cat`)
+insert_final_newline = true
+
+# Use 4 spaces for indentation, instead of tabs
+indent_style = space
+indent_size = 4
