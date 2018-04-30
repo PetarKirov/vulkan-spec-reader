@@ -63,14 +63,14 @@ void main()
 {
     auto str = cast(string)std.file.read("./data/vk.xml");
     auto doc = new arsd.dom.Document(str);
-    //auto r = doc.root.deserialize!Registry;
-    //r.finish();
-    //writeln("Done!");
+    auto r = doc.root.deserialize!Registry;
+    r.finish();
+    writeln("Done!");
 
-    writeln(doc.root.childNodes.filter!(n => n.tagName != "#text" ).drop(1).front.tagName);
+    //writeln(doc.root.childNodes.filter!(n => n.tagName != "#text" ).drop(1).front.tagName);
 
     readln();
-    //r.dump.writeln;
+    r.dump.writeln;
 }
 
 enum hasToString(T) = is(typeof(T.init.toString()) : string);
